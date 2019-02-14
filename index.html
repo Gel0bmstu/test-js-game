@@ -4,10 +4,54 @@
 	<meta charset="UTF-8">
 	<title>game</title>
 	<style>@import "css/index.css"</style>
-</head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <body>
-	<canvas id="mainscreen" width="700" height="700"></canvas>
+	<div style="padding: 0px 15px 0px 15px">
+		<div class="row" style="background-color:#13012D">
+			<div class="col-md-4">
+				<div class="pos-f-t">
+				<!--
+					<div class="collapse" id="navbarToggleExternalContent">
+						<div class="bg-dark p-4">
+							<h4 class="text-white">Collapsed content</h4>
+							<span class="text-muted">Toggleable via the navbar brand.</span>
+						</div>
+					</div>
+				-->
+					<nav class="navbar navbar-dark">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+					</nav>
+				</div>
+			</div>
+			<div class="col-md-4 d-flex justify-content-center">
+				<h1 style="color: white; padding: 2px; font-family: Segoe UI">₸228322</h1>
+			</div>
+			<div class="col-md-1">
+			</div>
+			<div class="col-md-1" style="background-color: #F81147;">
+				<div class="d-flex justify-content-center">
+					<h2 style="color: white; font-family: Segoe UI">Войти</h2>
+				</div>
+			</div>
+			<div class="col-md-2" style="background-color: #A353CC">
+				<div class="d-flex justify-content-center">
+					<h2 style="color: white; padding: 2px; font-family: Segoe UI">Регистрация</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row" style="background-image:url(static/background.jpg)">
+			<div class="col-md-3">
+			</div>
+			<div class="col-md-6">
+				<canvas id="mainscreen" width="673" height="652"></canvas>
+			</div>
+			<div class="col-md-3">
+			</div>
 
+		</div>
+	</div>
 	<script src="js/index.js"></script>
 </body>
 </html>
