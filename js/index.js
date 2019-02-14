@@ -29,7 +29,10 @@ function gameloop() {
     drawEnemy();
 
     if (x > enemyX && x < enemyX + 50 && y > enemyY && y < enemyY + 50 ) {
-    	enemyX = 0; enemyY = 0;
+    	while (x > enemyX && x < enemyX + 50 && y > enemyY && y < enemyY + 50) {
+    		enemyX = Math.random() * 650;
+    		enemyY = Math.random() * 650;
+    	}
 		var win = window.open('http://ya.ru', '_blank');
 	    var timer = setInterval(function() {
 	        if (win.closed()) {
@@ -38,6 +41,26 @@ function gameloop() {
 	        }
 	    }, 500);
     }
+    else {
+    	if (enemyY+25 <= y && enemyX+25 <= x) {
+    		enemyY += 1; 
+    		enemyX += 1;
+    	}
+    	else if (enemyX+25 >= x && enemyY+25 >= y) {
+    		enemyY -= 1;
+    		enemyX -= 1;
+    	}
+    	else if (enemyX+25 <= x && enemyY+25 >= y) {
+    		enemyX += 1;
+    		enemyY -= 1;
+    	}
+    	else if (enemyY+25 <= y && enemyX+25 >= x) {
+    		enemyX -= 1;
+    		enemyY += 1;
+    	}
+    }
+
+
 
     if(rightPressed) {
         x += 7;
