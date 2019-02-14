@@ -1,0 +1,23 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "test_game",
+  "main": "index.js",
+  "scripts": {
+    "dist" : "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gel0bmstu/test-js-game.git"
+  },
+  "author": "Gel0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gel0bmstu/test-js-game/issues"
+  },
+  "homepage": "https://github.com/Gel0bmstu/test-js-game#readme",
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3"
+  }
+}
